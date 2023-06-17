@@ -17,38 +17,34 @@ function Navbar() {
     const handleClick = () => setNav(!nav);
 
     return(
-        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#9e215a] text-gray-300">
+        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
             <div>
-                <h1 className="font-thin text-2xl italic font-serif">Kim Buckner's R.E.A.C.H. Program</h1>
+                <h1 className="font-thin text-2xl italic font-serif">JBL</h1>
             </div>
             {/* Menu */}
-            <ul className="hidden md:flex gap-x-0">
+            <ul className="hidden md:flex gap-x-8">
                 <li>
-                    <Link to="home" 
-                        smooth={true} 
-                        duration={500}
-                        className="hover:bg-black px-3 py-5 rounded-md"
-                    >
+                    <Link to="home" smooth={true} duration={500}>
                         Home
                     </Link>
                 </li>
                 <li>
-                    <Link to="about" smooth={true} duration={500} className="hover:bg-black px-3 py-5 rounded-md">
+                    <Link to="about" smooth={true} duration={500}>
                         About
                     </Link>
                 </li>
                 <li>
-                    <Link to="skills" smooth={true} duration={500} className="hover:bg-black px-3 py-5 rounded-md">
+                    <Link to="skills" smooth={true} duration={500}>
                         Skills
                     </Link>
                 </li>
                 <li>
-                    <Link to="work" smooth={true} duration={500} className="hover:bg-black px-3 py-5 rounded-md">
+                    <Link to="work" smooth={true} duration={500}>
                         Work
                     </Link>
                 </li>
                 <li>
-                    <Link to="contact" smooth={true} duration={500} className="hover:bg-black px-3 py-5 rounded-md">
+                    <Link to="contact" smooth={true} duration={500}>
                         Contact
                     </Link>
                 </li>
