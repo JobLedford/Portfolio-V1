@@ -1,29 +1,31 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import hands from '../assets/reaching-hands.jpeg';
+import me from '../assets/me.png';
 import { Link } from "react-scroll";
 
 function Home() {
     return(
         <div
         name="home"
-        className="h-screen w-full bg-[#fffff]">
+        className="h-screen w-full bg-[#0a192f]">
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
                 <div className="flex flex-col justify-center h-full">
-                    <h2 className="text-4xl sm:text-7xl font-bold text-[#00000]">
-                        R.E.A.C.H.
+                    <h2 className="text-4xl sm:text-7xl font-bold text-white">
+                        I'm a Full-Stack Web Developer
                     </h2>
                     <p className="text-gray-500 py-4 max-w-md">
-                    Restoring, educating, advocating—these three words capture the essence of our dedication to community health. At R.E.A.C.H., we are committed to making a lasting difference in our community. With your support, we can continue our vital work, providing resources, support, and education that empower individuals and families to prioritize their well-being. Join us in our mission to build a healthier future for all.
+                    I have a year of experience in graphics design and web development.
+                    Currently, I love to work on web application using technologies like
+                    React, Sass, Node.js and Mongodb.
                     </p>
                     <div>
                         <Link 
                             to="about"
                             smooth
                             duration={500}
-                            className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-bg-gradient-to-r from-[#d9317e] to-[#9e215a] cursor-pointer"
+                            className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
                         >
-                            About Us
+                            About Me
                             <span className="group-hover:rotate-90 duration-300">
                                 <HiArrowNarrowRight size={25} className="ml-3" />
                             </span>
@@ -32,9 +34,9 @@ function Home() {
                 </div>
                 <div>
                     <img
-                        src={hands}
-                        alt="Two hands reaching towards each other"
-                        className="rounded-2xl mx-auto w-1/3 md:w-3/4"
+                        src={me}
+                        alt="my profile"
+                        className="rounded-2xl mx-auto w-2/3 md:w-full"
                     />
                 </div>
             </div>
